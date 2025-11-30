@@ -1,0 +1,32 @@
+{
+  "name": "three-arch-dims",
+  "version": "0.0.1",
+  "description": "Architectural dimensioning tools for Three.js",
+  "type": "module",
+  "main": "./dist/three-arch-dims.umd.js",
+  "module": "./dist/three-arch-dims.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/three-arch-dims.es.js",
+      "require": "./dist/three-arch-dims.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.181.0",
+    "lil-gui": "^0.21.0",
+    "three": "^0.160.0",
+    "typescript": "^5.2.0",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.0"
+  }
+}
